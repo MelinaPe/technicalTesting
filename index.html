@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Customer Registration</h1>
+    <form id="customerForm" action="submit.php" method="POST" enctype="multipart/form-data">
+        <label for="customerName">Customer Name:</label>
+        <input type="text" id="customerName" name="customerName" required><br><br>
+        
+        <label for="primaryColor">Primary Color:</label>
+        <input type="color" id="primaryColor" name="primaryColor" value="#F0776F" required><br><br>
+        
+        <label for="successColor">Success Color:</label>
+        <input type="color" id="successColor" name="successColor" value="#F0776F" required><br><br>
+        
+        <label for="dashboardAccess">Dashboard Access:</label>
+        <input type="checkbox" id="dashboardAccess" name="dashboardAccess" checked><br><br>
+        
+        <label for="companyLogo">Company Logo:</label>
+        <input type="file" id="companyLogo" name="companyLogo" accept="image/png, image/jpeg" required><br><br>
+        
+        <label for="dataProtection">Data Protection Document:</label>
+        <input type="file" id="dataProtectionContent" name="dataProtection" accept=".xlsx" required><br><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.3/xlsx.full.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
